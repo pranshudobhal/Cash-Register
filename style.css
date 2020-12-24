@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333333;
+  background-color: lightblue;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  max-width: 600px;
+}
+
+table {
+  background-color: white;
+}
+
+#bill-amount {
+  width: 100%;
+}
+
+#cash-given {
+  width: 100%;
+}
+
+.tdstyle {
+  text-align: right;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cash Register</h1>
+    </header>
+    <main>
+      <table width="500" border="1">
+        <colgroup width="50%" />
+        <tbody>
+          <tr>
+            <td>Bill Amount</td>
+            <td colspan="2"><input type="number" id="bill-amount" placeholder="Enter Bill Amount" /></td>
+          </tr>
+          <tr id="cash">
+            <td>Cash Given</td>
+            <td colspan="2">
+              <input type="number" id="cash-given" placeholder="Enter Cash Given" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cash to be Returned</td>
+            <td colspan="2" id="cash-return"></td>
+          </tr>
+          <tr>
+            <td rowspan="7">Number of notes</td>
+            <td style="width: 35%">2000 Notes</td>
+            <td class="tdstyle" id="note2000"></td>
+          </tr>
+          <tr>
+            <td>500 Notes</td>
+            <td class="tdstyle" id="note500"></td>
+          </tr>
+          <tr>
+            <td>100 Notes</td>
+            <td class="tdstyle" id="note100"></td>
+          </tr>
+          <tr>
+            <td>20 Notes</td>
+            <td class="tdstyle" id="note20"></td>
+          </tr>
+          <tr>
+            <td>10 Notes</td>
+            <td class="tdstyle" id="note10"></td>
+          </tr>
+          <tr>
+            <td>5 Notes</td>
+            <td class="tdstyle" id="note5"></td>
+          </tr>
+          <tr>
+            <td>1 Notes</td>
+            <td class="tdstyle" id="note1"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              <button onclick="calcBill()">Calculate</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
